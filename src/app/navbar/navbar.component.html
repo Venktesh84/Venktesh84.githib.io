@@ -1,0 +1,51 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" (click)="callDiv('top')">
+    <img src="../../assets/images/logo.jpg" alt="Globetrotter Logo" height="25">
+    Globetrotter
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" (click)="openNav()"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item pr-4 active">
+              <a class="nav-link" (click)="callDiv('top')">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item pr-4">
+              <a class="nav-link" (click)="callDiv('middle')">About</a>
+          </li>
+          <li class="nav-item pr-4">
+              <a class="nav-link" (click)="callDiv('bottom')">Contact</a>
+          </li>
+      </ul>
+  </div>
+</nav>
+<div id="mySidebar" class="sidebar">
+  <a class="btn-light" (click)="closeNav()">Close</a>
+  <a (click)="callDiv('top')">Home</a>
+  <a (click)="callDiv('middle')">About</a>
+  <a (click)="callDiv('bottom')">Contact</a>
+</div>
+
+<div id="main">
+  <div id="top">
+    <app-home></app-home>
+</div>
+
+<div id="middle">
+    <app-about></app-about>
+</div>
+
+<div id="bottom">
+    <app-contact></app-contact>
+</div>
+
+</div>
+
+
+<footer>
+    <div class="card-footer bg-light text-muted text-center">
+      <p class="copyright"> © Copyright. All Rights Reserved</p>
+    </div>
+</footer>

@@ -1,0 +1,11 @@
+#loadimage { 
+    background-image: url("../../assets/images/aboutpage.jpg"); 
+  }
+
+h2,p,h4{
+    color: rgba(231, 223, 223, 0.753);
+    font-family: "montserrat-bold", sans-serif;
+}
+
+
+  

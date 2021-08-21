@@ -1,0 +1,9 @@
+<ngb-carousel #carousel [interval]="2000" (slide)="onSlide($event)">
+    <ng-template ngbSlide *ngFor="let img of touringImages; index as i">
+      <div class="carousel-caption">
+      </div>
+        <div class="picsum-img-wrapper">
+          <img [src]="img" class="img-fluid" alt="{{img}}">
+        </div>
+    </ng-template>
+</ngb-carousel>
