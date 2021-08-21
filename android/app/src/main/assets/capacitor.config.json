@@ -1,0 +1,6 @@
+{
+	"appId": "com.venky.globetrotter",
+	"appName": "globetrotter",
+	"webDir": "dist/globetrotter",
+	"bundledWebRuntime": false
+}
